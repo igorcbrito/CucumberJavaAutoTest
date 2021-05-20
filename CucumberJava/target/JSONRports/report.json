@@ -1,0 +1,84 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-20T02:38:21.298Z",
+        "line": 4,
+        "name": "Check login is successful with valid username and password",
+        "description": "",
+        "id": "test-login-functionality-(gmail);check-login-is-successful-with-valid-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3946820500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "browser is open",
+            "match": {
+              "location": "StepDefinitions.GmailLoginSteps.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1895788300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepDefinitions.GmailLoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2377266400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username and password",
+            "match": {
+              "location": "StepDefinitions.GmailLoginSteps.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2087735300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on login",
+            "match": {
+              "location": "StepDefinitions.GmailLoginSteps.user_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10060558700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to the home page",
+            "match": {
+              "location": "StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test login functionality (Gmail)",
+    "description": "",
+    "id": "test-login-functionality-(gmail)",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/GmailLogin.feature",
+    "tags": []
+  }
+]
