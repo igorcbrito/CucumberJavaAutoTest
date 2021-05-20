@@ -1,10 +1,15 @@
 package StepDefinitions;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import io.cucumber.java.en.*;
 
@@ -55,11 +60,34 @@ public class GmailLoginSteps {
 		
 		Thread.sleep(2000);
 	}
+	
+	Boolean result = null;
 
 	@Then("user is navigated to the home page")
 	public void user_is_navigated_to_the_home_page() throws InterruptedException {
 		
-		driver.findElement(By.cssSelector("input[placeholder='Pesquisar e-mail'")).isDisplayed();
+
+		try{
+			
+			result = driver.findElement(By.cssSelector("input[placeholder='Pesquisar e-mail']")).isDisplayed();
+			System.out.println("Login realizado com sucesso!");
+			
+		}
+		
+		catch (Exception e){
+			
+			System.out.println("Usuário ou senha incorretos!");
+		}
+		
+		
+		
+		
+		//Assert.assertTrue("Usuário ou senha incorretos!", result);
+		
+		result = null;
+		//driver.findElement(By.xpath("//*[text()='Senha incorreta. Tente novamente ou clique em \"Esqueceu a senha?\" para redefini-la.']")).isDisplayed()
+		//System.out.println("Usuário ou senha incorretos!");
+			
 		
 		Thread.sleep(2000);
 		

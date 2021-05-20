@@ -3,17 +3,17 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-05-20T02:38:21.298Z",
-        "line": 4,
+        "start_timestamp": "2021-05-20T19:58:57.302Z",
+        "line": 13,
         "name": "Check login is successful with valid username and password",
         "description": "",
-        "id": "test-login-functionality-(gmail);check-login-is-successful-with-valid-username-and-password",
+        "id": "test-login-functionality-(gmail);check-login-is-successful-with-valid-username-and-password;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3946820500,
+              "duration": 3883527600,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1895788300,
+              "duration": 7552944400,
               "status": "passed"
             },
             "line": 6,
@@ -37,19 +37,29 @@
           },
           {
             "result": {
-              "duration": 2377266400,
+              "duration": 2513429000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enters username and password",
+            "name": "user enters testedesafio.igor and 1234@4321",
             "match": {
-              "location": "StepDefinitions.GmailLoginSteps.user_enters_username_and_password()"
+              "arguments": [
+                {
+                  "val": "testedesafio.igor",
+                  "offset": 12
+                },
+                {
+                  "val": "1234@4321",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefinitions.GmailLoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2087735300,
+              "duration": 2087879800,
               "status": "passed"
             },
             "line": 8,
@@ -61,8 +71,91 @@
           },
           {
             "result": {
-              "duration": 10060558700,
+              "error_message": "java.lang.AssertionError: Login realizado com sucesso!\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page(GmailLoginSteps.java:71)\r\n\tat ✽.user is navigated to the home page(file:///C:/Users/igorc/eclipse-workspace/CucumberJava/src/test/resources/Features/GmailLogin.feature:9)\r\n",
+              "duration": 8039268700,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user is navigated to the home page",
+            "match": {
+              "location": "StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-20T19:59:21.508Z",
+        "line": 14,
+        "name": "Check login is successful with valid username and password",
+        "description": "",
+        "id": "test-login-functionality-(gmail);check-login-is-successful-with-valid-username-and-password;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1520008200,
               "status": "passed"
+            },
+            "line": 5,
+            "name": "browser is open",
+            "match": {
+              "location": "StepDefinitions.GmailLoginSteps.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2646147200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepDefinitions.GmailLoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2409319000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters testedesafio.igor and 12365446",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testedesafio.igor",
+                  "offset": 12
+                },
+                {
+                  "val": "12365446",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefinitions.GmailLoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2090657600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on login",
+            "match": {
+              "location": "StepDefinitions.GmailLoginSteps.user_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.cssSelector: input[placeholder\u003d\u0027Pesquisar e-mail\u0027]\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-beta-3\u0027, revision: \u00275d108f9a67\u0027\nSystem info: host: \u0027IGORDESKTOP\u0027, ip: \u0027192.168.192.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1261)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)\r\n\tat StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page(GmailLoginSteps.java:67)\r\n\tat ✽.user is navigated to the home page(file:///C:/Users/igorc/eclipse-workspace/CucumberJava/src/test/resources/Features/GmailLogin.feature:9)\r\n",
+              "duration": 2115733800,
+              "status": "failed"
             },
             "line": 9,
             "name": "user is navigated to the home page",

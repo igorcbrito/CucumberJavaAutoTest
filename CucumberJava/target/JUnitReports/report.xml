@@ -1,13 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.256">
-    <testcase classname="Test login functionality (Gmail)" name="Check login is successful with valid username and password" time="20.434">
-        <system-out>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="35.891">
+    <testcase classname="Test login functionality (Gmail)" name="Check login is successful with valid username and password" time="24.166">
+        <failure message="Login realizado com sucesso!" type="java.lang.AssertionError">
             <![CDATA[Given browser is open.......................................................passed
 And user is on login page...................................................passed
-When user enters username and password......................................passed
+When user enters testedesafio.igor and 1234@4321............................passed
 And user clicks on login....................................................passed
-Then user is navigated to the home page.....................................passed
+Then user is navigated to the home page.....................................failed
+
+StackTrace:
+java.lang.AssertionError: Login realizado com sucesso!
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page(GmailLoginSteps.java:71)
+	at ✽.user is navigated to the home page(file:///C:/Users/igorc/eclipse-workspace/CucumberJava/src/test/resources/Features/GmailLogin.feature:9)
 ]]>
-        </system-out>
+        </failure>
+    </testcase>
+    <testcase classname="Test login functionality (Gmail)" name="Check login is successful with valid username and password 2" time="10.79">
+        <failure message="Unable to find element with locator By.cssSelector: input[placeholder='Pesquisar e-mail']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'&#10;System info: host: 'IGORDESKTOP', ip: '192.168.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given browser is open.......................................................passed
+And user is on login page...................................................passed
+When user enters testedesafio.igor and 12365446.............................passed
+And user clicks on login....................................................passed
+Then user is navigated to the home page.....................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.cssSelector: input[placeholder='Pesquisar e-mail']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'IGORDESKTOP', ip: '192.168.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1261)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page(GmailLoginSteps.java:67)
+	at ✽.user is navigated to the home page(file:///C:/Users/igorc/eclipse-workspace/CucumberJava/src/test/resources/Features/GmailLogin.feature:9)
+]]>
+        </failure>
     </testcase>
 </testsuite>

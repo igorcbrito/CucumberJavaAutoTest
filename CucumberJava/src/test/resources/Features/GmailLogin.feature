@@ -11,3 +11,4 @@ Feature: Test login functionality (Gmail)
     Examples: 
       | username          | password  |
       | testedesafio.igor | 1234@4321 |
+      | testedesafio.igor |  12365446 |
