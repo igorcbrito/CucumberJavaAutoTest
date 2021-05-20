@@ -93,6 +93,12 @@ OBS: A implementação completa está no diretório src/test/java/StepDefinition
 Na tag @When, os trechos descritos como (.*) representam o usuário e senha parametrizáveis. Estes parâmetros são passados através 
 dos exemplos presentes no arquivo feature do Cucumber.
 
+#### Para executar os testes 
+
+Basta acessar o arquivo GmailLogin.feature na imagem a seguir, clicar com o botão direito > Run As > Cucumber Feature.
+
+![image](https://user-images.githubusercontent.com/37213793/119058317-86aa1280-b9a4-11eb-93e8-c61ffea3395e.png)
+
 
 #### Resultado
 Para validar o login no site do Gmail, foi utilizada uma estrutura de Try e Catch. No Try é procurado por um elemento único da página
