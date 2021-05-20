@@ -78,15 +78,9 @@ public class GmailLoginSteps {
 			
 			System.out.println("Usuário ou senha incorretos!");
 		}
-		
-		
-		
-		
-		//Assert.assertTrue("Usuário ou senha incorretos!", result);
+	
 		
 		result = null;
-		//driver.findElement(By.xpath("//*[text()='Senha incorreta. Tente novamente ou clique em \"Esqueceu a senha?\" para redefini-la.']")).isDisplayed()
-		//System.out.println("Usuário ou senha incorretos!");
 			
 		
 		Thread.sleep(2000);
