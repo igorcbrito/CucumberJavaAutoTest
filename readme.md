@@ -99,6 +99,12 @@ Basta acessar o arquivo GmailLogin.feature na imagem a seguir, clicar com o bot�
 
 ![image](https://user-images.githubusercontent.com/37213793/119058317-86aa1280-b9a4-11eb-93e8-c61ffea3395e.png)
 
+Usuário e senha temporários do Gmail:
+
+testedesafio.igor / 1234@4321
+
+Também foi utilizada uma senha errada para demonstrar o funcionamento do cenário quando o acesso não pode ser validado. O mesmo caso de teste poderia ser demonstrado utilizando outro Scenario Outline.
+
 
 #### Resultado
 Para validar o login no site do Gmail, foi utilizada uma estrutura de Try e Catch. No Try é procurado por um elemento único da página
