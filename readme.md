@@ -5,10 +5,56 @@ Como alvo, foi solicitado que se criasse um sistema que pudesse fazer login na p
 demonstrados os principais pontos da implementação, a configuração do projeto e o download das dependências será anexado ao fim do texto.
 
 OBS: Optou-se por não utilizar as versões mais recentes das dependências encontradas no https://search.maven.org/ por conta de incompatibilidades geradas nos relatórios de erros. 
-As versões das dependências utilizadas seguem o formato da imagem a seguir: 
+As versões das dependências utilizadas seguem o código a seguir: 
 
-![image](https://user-images.githubusercontent.com/37213793/119049927-8a836800-b997-11eb-90cb-a3b208376e51.png)
+~~~
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>CucumberJava</groupId>
+	<artifactId>CucumberJava</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>5.7.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>5.7.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.0.0-beta-3</version>
+		</dependency>
+
+
+
+	</dependencies>
+</project>
+
+~~~ 
 
 #### Cucumber
 A ferramenta possibilitou a criação de cenários no formato BDD de forma bem clara e definida. 
