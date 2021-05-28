@@ -186,36 +186,33 @@ Também foi utilizada uma senha errada para demonstrar o funcionamento do cenár
 
 
 #### Resultado
-Para validar o login no site do Gmail, foi utilizada uma estrutura de Try e Catch. No Try é procurado por um elemento único da página
-que satisfaça a pré condição de estar logado no Gmail. Para fazer essa validação foi utilizada a barra de pesquisa de e-mails.
+Para validar se o login foi realizado com sucesso foi utilizada a dependência httpclient para recuperar a resposta HTTP recebida do servidor. Esperava-se que o servidor respondesse código 200 caso o login fosse realizado com sucesso e 401 no caso de o login não ter sido autorizado, porém existe um redirecionamento na página que causa um impedimento nesta abordagem.
 
-Ao ser lançada uma exceção, é executada uma mensagem de usuário e senha incorretos no escopo do Catch. Vale destacar que 
-existe um tempo em que o sistema aguarda pelo elemento utilizado para validação na página e só em seguida a mensagem de usuário e senha incorretos 
-é exibida no sistema.
 
 ~~~
-
-Boolean result = null;
-
-	@Then("user is navigated to the home page")
-	public void user_is_navigated_to_the_home_page() throws InterruptedException {
+@Then("user is navigated to the home page")
+	public void user_is_navigated_to_the_home_page() throws InterruptedException, IOException {
 		
+		HttpClient client = HttpClient.newHttpClient();
+		HttpRequest request = HttpRequest.newBuilder()
+				.uri(URI.create("https://mail.google.com/mail/u/0/#inbox"))
+                .GET() 
+                .build();
 
-		try{
-			
-			result = driver.findElement(By.cssSelector("input[placeholder='Pesquisar e-mail']")).isDisplayed();
-			System.out.println("Login realizado com sucesso!");
-			
-		}
+
+		HttpResponse<Void> response = client.send(request,
+				HttpResponse.BodyHandlers.discarding());
 		
-		catch (Exception e){
-			
-			System.out.println("Usuário ou senha incorretos!");
-		}
-	
-		
-		result = null;
-			
+	    Assert.assertEquals(200, response.statusCode());
+	    
+	    if(response.statusCode()==200) {
+	    	System.out.println("Login bem sucedido");
+	    	
+	    }else {
+	    	System.out.println("Mal sucedido! =(");
+	    }
+	    
+	    Assert.assertEquals(200, response.statusCode());
 		
 		Thread.sleep(2000);
 		
@@ -226,13 +223,14 @@ Boolean result = null;
 ~~~ 
 
 
-![image](https://user-images.githubusercontent.com/37213793/119055500-85c2b200-b99f-11eb-8a43-0d5094208406.png)
 
 
 #### Referências
 Para toda a configuração do projeto e também alguns passos de implementação foi seguido os tutoriais do canal Automation Step by Step - Raghav Pal.
 
 <a href="https://www.youtube.com/watch?v=4e9vhX7ZuCw&ab_channel=AutomationStepbyStep-RaghavPal" title="Clicando aqui é possível ter acesso ao primeiro vídeo.">Automation Step by Step - Raghav Pal</a>
+
+https://www.baeldung.com/java-9-http-client
 
 
 
