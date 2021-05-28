@@ -8,7 +8,7 @@ Para este projeto foi utilizada a seguinte versão do Java no Windows:
 Como alvo, foi solicitado que se criasse um sistema que pudesse fazer login na plataforma do Gmail e verificar se o login é realizado com sucesso. Neste documento serão
 demonstrados os principais pontos da implementação, a configuração do projeto e o download das dependências será anexado ao fim do texto.
 
-As versões das dependências e plugins utilizados seguem o código a seguir: 
+As versões das dependências e plugins utilizados no arquivo POM seguem o código a seguir: 
 
 ~~~
 <project xmlns="http://maven.apache.org/POM/4.0.0"
