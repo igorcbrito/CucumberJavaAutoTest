@@ -81,7 +81,7 @@ Para executar o projeto é necessário instalar as dependências do Maven no Win
 
 Link para download: https://maven.apache.org/download.cgi (Utilizada a versão 3.8.1, arquivo .zip)
 
-Após baixada e extraídas as dependências do Maven, é necessário adicionar o caminho do diretório na variável Path no sistema. Para isso basta ir até Sistema > 
+Após baixada e extraídas as dependências do Maven, é necessário adicionar o caminho do diretório na variável Path no sistema. Para isso basta ir até Sistema (Win + Pause) > 
 Configurações avançadas do sistema > Variáveis de ambiente...
 Em seguida ir até a variável de sistema Path e editar. Crie um novo caminho para o diretório da basta bin da sua dependência do Maven.
 ![image](https://user-images.githubusercontent.com/37213793/119924540-2853d580-bf4a-11eb-861e-5ea4dc7faee2.png)
