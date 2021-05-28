@@ -76,7 +76,7 @@ As versões das dependências e plugins utilizados no arquivo POM seguem o códi
 </project>
 
 ~~~ 
-### Maven
+#### Maven
 Para executar o projeto é necessário instalar as dependências do Maven no Windows.
 
 Link para download: https://maven.apache.org/download.cgi (Utilizada a versão 3.8.1, arquivo .zip)
@@ -85,6 +85,13 @@ Após baixada e extraídas as dependências do Maven, é necessário adicionar o
 Configurações avançadas do sistema > Variáveis de ambiente...
 Em seguida ir até a variável de sistema Path e editar. Crie um novo caminho para o diretório da basta bin da sua dependência do Maven.
 ![image](https://user-images.githubusercontent.com/37213793/119924540-2853d580-bf4a-11eb-861e-5ea4dc7faee2.png)
+
+#### Chrome Driver
+Para executar os testes no navegador da Google é necessário baixar o arquivo do Chrome Driver. O arquivo foi inserido no diretório do projeto, mas o ideal é que se localize em um diretório do sistema operacional. No entanto, deve se atentar de buscar o arquivo do Chrome Driver no código do teste.
+
+Para baixar o Chrome Driver é necessário saber a versão instalada do Google Chrome. Para saber a versão do Google Chrome basta ir em Opções > Ajuda > Sobre o Google Chrome.
+
+Link para download do Chrome Driver: https://chromedriver.chromium.org/downloads
 
 
 #### Cucumber
