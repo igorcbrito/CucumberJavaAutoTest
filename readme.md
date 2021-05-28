@@ -172,9 +172,11 @@ dos exemplos presentes no arquivo feature do Cucumber.
 
 #### Para executar os testes 
 
-Basta acessar o arquivo GmailLogin.feature na imagem a seguir, clicar com o botão direito > Run As > Cucumber Feature.
+Basta acessar a pasta do projeto no mesmo diretório onde fica localizado o arquivo POM e executar o comando 
 
-![image](https://user-images.githubusercontent.com/37213793/119058317-86aa1280-b9a4-11eb-93e8-c61ffea3395e.png)
+~~~
+mvn test 
+~~~
 
 Usuário e senha temporários do Gmail:
 
