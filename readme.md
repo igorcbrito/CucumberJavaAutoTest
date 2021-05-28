@@ -23,8 +23,9 @@ As versões das dependências utilizadas seguem o código a seguir:
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>5.7.0</version>
+			<version>6.10.4</version>
 		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
@@ -38,9 +39,10 @@ As versões das dependências utilizadas seguem o código a seguir:
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>5.7.0</version>
+			<version>6.10.4</version>
 			<scope>test</scope>
 		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
