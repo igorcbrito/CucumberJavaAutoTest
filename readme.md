@@ -4,8 +4,7 @@ O objetivo deste projeto é criar uma prova de conceito com o auxílio das ferra
 Como alvo, foi solicitado que se criasse um sistema que pudesse fazer login na plataforma do Gmail e verificar se o login é realizado com sucesso. Neste documento serão
 demonstrados os principais pontos da implementação, a configuração do projeto e o download das dependências será anexado ao fim do texto.
 
-OBS: Optou-se por não utilizar as versões mais recentes das dependências encontradas no https://search.maven.org/ por conta de incompatibilidades geradas nos relatórios de erros. 
-As versões das dependências utilizadas seguem o código a seguir: 
+As versões das dependências e plugins utilizados seguem o código a seguir: 
 
 ~~~
 <project xmlns="http://maven.apache.org/POM/4.0.0"
