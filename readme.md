@@ -87,7 +87,7 @@ Em seguida ir até a variável de sistema Path e editar. Crie um novo caminho pa
 ![image](https://user-images.githubusercontent.com/37213793/119924540-2853d580-bf4a-11eb-861e-5ea4dc7faee2.png)
 
 #### Chrome Driver
-Para executar os testes no navegador da Google é necessário baixar o arquivo do Chrome Driver. O arquivo foi inserido no diretório do projeto, mas o ideal é que se localize em um diretório do sistema operacional. No entanto, deve se atentar de buscar o arquivo do Chrome Driver no código do teste.
+Para executar os testes no navegador da Google é necessário baixar o arquivo do Chrome Driver (um arquivo .exe). O arquivo foi inserido no diretório do projeto, mas o ideal é que se localize em um diretório do sistema operacional. No entanto, deve se atentar de buscar o arquivo do Chrome Driver no código do teste.
 
 Para baixar o Chrome Driver é necessário saber a versão instalada do Google Chrome. Para saber a versão do Google Chrome basta ir em Opções > Ajuda > Sobre o Google Chrome.
 
