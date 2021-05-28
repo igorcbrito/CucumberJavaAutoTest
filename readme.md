@@ -16,6 +16,18 @@ As versões das dependências utilizadas seguem o código a seguir:
 	<artifactId>CucumberJava</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+					<testFailureIgnore>true</testFailureIgnore>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 	<dependencies>
 
@@ -50,8 +62,6 @@ As versões das dependências utilizadas seguem o código a seguir:
 			<artifactId>selenium-java</artifactId>
 			<version>4.0.0-beta-3</version>
 		</dependency>
-
-
 
 	</dependencies>
 </project>
