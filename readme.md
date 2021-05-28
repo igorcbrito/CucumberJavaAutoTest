@@ -1,6 +1,10 @@
 ### Exemplo de teste automatizado utilizando Java, Selenium e Cucumber
 
 O objetivo deste projeto é criar uma prova de conceito com o auxílio das ferramentas Java, Selenium e Cucumber. 
+
+Para este projeto foi utilizada a seguinte versão do Java no Windows:
+![image](https://user-images.githubusercontent.com/37213793/119924081-51c03180-bf49-11eb-9859-2c881401d4a9.png)
+
 Como alvo, foi solicitado que se criasse um sistema que pudesse fazer login na plataforma do Gmail e verificar se o login é realizado com sucesso. Neste documento serão
 demonstrados os principais pontos da implementação, a configuração do projeto e o download das dependências será anexado ao fim do texto.
 
