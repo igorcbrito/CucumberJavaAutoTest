@@ -9,7 +9,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.net.URI;
+import java.io.IOException;
 
 import io.cucumber.java.en.*;
 
@@ -31,7 +38,6 @@ public class GmailLoginSteps {
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		//driver.manage().window().maximize();
 	}
 
 	@And("user is on login page")
@@ -61,27 +67,31 @@ public class GmailLoginSteps {
 		Thread.sleep(2000);
 	}
 	
-	Boolean result = null;
+	
 
 	@Then("user is navigated to the home page")
-	public void user_is_navigated_to_the_home_page() throws InterruptedException {
+	public void user_is_navigated_to_the_home_page() throws InterruptedException, IOException {
 		
+		HttpClient client = HttpClient.newHttpClient();
+		HttpRequest request = HttpRequest.newBuilder()
+				.uri(URI.create("https://mail.google.com/mail/u/0/#inbox"))
+                .GET() 
+                .build();
 
-		try{
-			
-			result = driver.findElement(By.cssSelector("input[placeholder='Pesquisar e-mail']")).isDisplayed();
-			System.out.println("Login realizado com sucesso!");
-			
-		}
+
+		HttpResponse<Void> response = client.send(request,
+				HttpResponse.BodyHandlers.discarding());
 		
-		catch (Exception e){
-			
-			System.out.println("Usuário ou senha incorretos!");
-		}
-	
-		
-		result = null;
-			
+	    Assert.assertEquals(200, response.statusCode());
+	    
+	    if(response.statusCode()==200) {
+	    	System.out.println("Login bem sucedido");
+	    	
+	    }else {
+	    	System.out.println("Mal sucedido! =(");
+	    }
+	    
+	    Assert.assertEquals(200, response.statusCode());
 		
 		Thread.sleep(2000);
 		

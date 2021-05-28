@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="StepDefinitions.TestRunner" time="24.458" tests="2" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.8+10-LTS"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\igorc\eclipse-workspace\CucumberJava"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\igorc\eclipse-workspace\CucumberJava"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.8+10-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\igorc\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;F:\matlab\bin;C:\Program Files\Polyspace\R2020a\bin;C:\Program Files\swipl\bin;C:\Users\igorc\AppData\Local\Programs\Python\Python39\Scripts;C:\Program Files\webdrivers;C:\Program Files\nodejs\;C:\MinGW\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\apache-maven-3.8.1\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\igorc\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PostgreSQL;C:\cygwin64\bin;C:\Users\igorc\flyway-6.5.6;C:\Program Files\Java\jdk-11.0.8\bin;C:\Program Files\PostgreSQL\psqlODBC\bin;C:\Program Files\PostgreSQL\10\bin;C:\Users\igorc\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\igorc\AppData\Local\GitHubDesktop\bin;C:\Program Files\webdrivers;C:\Users\igorc\AppData\Roaming\npm;C:\MinGW\bin;F:\modelsim\modelsim_ase\win32aloem;F:\intelFPGA\16.1\modelsim_ase\win32aloem;C:\apache-maven-3.8.1\bin;;."/>
+    <property name="maven.conf" value="C:\apache-maven-3.8.1\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.8.1\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\igorc"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="igorc"/>
+    <property name="java.class.path" value="C:\apache-maven-3.8.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.8"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="maven.home" value="C:\apache-maven-3.8.1\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="Check login is successful with valid username and password #1(Test login functionality " classname="Check login is successful with valid username and password #1(Test login functionality (Gmail))" time="11.285">
+    <failure message="expected:&lt;200&gt; but was:&lt;302&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<302>
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Check login is successful with valid username and password # src/test/resources/Features/GmailLogin.feature:13
+Inside Step - browser is open
+Project path is : C:\Users\igorc\eclipse-workspace\CucumberJava
+  Given browser is open                                                      # StepDefinitions.GmailLoginSteps.browser_is_open()
+  And user is on login page                                                  # StepDefinitions.GmailLoginSteps.user_is_on_login_page()
+  When user enters testedesafio.igor and 1234@4321                           # StepDefinitions.GmailLoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)
+  And user clicks on login                                                   # StepDefinitions.GmailLoginSteps.user_clicks_on_login()
+  Then user is navigated to the home page                                    # StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page()
+      java.lang.AssertionError: expected:<200> but was:<302>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page(GmailLoginSteps.java:85)
+	at âœ½.user is navigated to the home page(file:///C:/Users/igorc/eclipse-workspace/CucumberJava/src/test/resources/Features/GmailLogin.feature:9)
+
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 25949
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 28, 2021 12:04:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+mai 28, 2021 12:04:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 90
+]]></system-err>
+  </testcase>
+  <testcase name="Check login is successful with valid username and password #2(Test login functionality " classname="Check login is successful with valid username and password #2(Test login functionality (Gmail))" time="9.504">
+    <failure message="expected:&lt;200&gt; but was:&lt;302&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<200> but was:<302>
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Check login is successful with valid username and password # src/test/resources/Features/GmailLogin.feature:14
+Inside Step - browser is open
+Project path is : C:\Users\igorc\eclipse-workspace\CucumberJava
+  Given browser is open                                                      # StepDefinitions.GmailLoginSteps.browser_is_open()
+  And user is on login page                                                  # StepDefinitions.GmailLoginSteps.user_is_on_login_page()
+  When user enters testedesafio.igor and 12365446                            # StepDefinitions.GmailLoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)
+  And user clicks on login                                                   # StepDefinitions.GmailLoginSteps.user_clicks_on_login()
+  Then user is navigated to the home page                                    # StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page()
+      java.lang.AssertionError: expected:<200> but was:<302>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page(GmailLoginSteps.java:85)
+	at âœ½.user is navigated to the home page(file:///C:/Users/igorc/eclipse-workspace/CucumberJava/src/test/resources/Features/GmailLogin.feature:9)
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 31171
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 28, 2021 12:05:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+mai 28, 2021 12:05:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 90
+]]></system-err>
+  </testcase>
+</testsuite>

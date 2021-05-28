@@ -107,8 +107,7 @@ formatter.match({
   "location": "StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: Login realizado com sucesso!\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page(GmailLoginSteps.java:71)\r\n\tat ✽.user is navigated to the home page(file:///C:/Users/igorc/eclipse-workspace/CucumberJava/src/test/resources/Features/GmailLogin.feature:9)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Check login is successful with valid username and password",
@@ -143,7 +142,8 @@ formatter.match({
   "location": "StepDefinitions.GmailLoginSteps.user_enters_username_and_password(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d90.0.4430.212)\nBuild info: version: \u00274.0.0-beta-3\u0027, revision: \u00275d108f9a67\u0027\nSystem info: host: \u0027IGORDESKTOP\u0027, ip: \u0027172.17.48.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.8\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4e538b6bf5ad2e0c9e32d4922f2d56e5, findElement {using\u003did, value\u003didentifierId}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\igorc\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52816}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52816/devtoo..., se:cdpVersion: 90.0.4430.212, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4e538b6bf5ad2e0c9e32d4922f2d56e5\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1258)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:393)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)\r\n\tat StepDefinitions.GmailLoginSteps.user_enters_username_and_password(GmailLoginSteps.java:47)\r\n\tat ✽.user enters testedesafio.igor and 12365446(file:///C:/Users/igorc/Desktop/CucumberJavaAutoTest/CucumberJava/src/test/resources/Features/GmailLogin.feature:7)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "user clicks on login",
@@ -153,7 +153,7 @@ formatter.match({
   "location": "StepDefinitions.GmailLoginSteps.user_clicks_on_login()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user is navigated to the home page",
@@ -163,7 +163,6 @@ formatter.match({
   "location": "StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.cssSelector: input[placeholder\u003d\u0027Pesquisar e-mail\u0027]\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-beta-3\u0027, revision: \u00275d108f9a67\u0027\nSystem info: host: \u0027IGORDESKTOP\u0027, ip: \u0027192.168.192.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1261)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)\r\n\tat StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page(GmailLoginSteps.java:67)\r\n\tat ✽.user is navigated to the home page(file:///C:/Users/igorc/eclipse-workspace/CucumberJava/src/test/resources/Features/GmailLogin.feature:9)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 });

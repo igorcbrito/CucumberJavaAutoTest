@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-05-20T19:58:57.302Z",
+        "start_timestamp": "2021-05-28T03:04:53.278Z",
         "line": 13,
         "name": "Check login is successful with valid username and password",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3883527600,
+              "duration": 3740089900,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 7552944400,
+              "duration": 2014116900,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 2513429000,
+              "duration": 2387901600,
               "status": "passed"
             },
             "line": 7,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 2087879800,
+              "duration": 2086366500,
               "status": "passed"
             },
             "line": 8,
@@ -71,8 +71,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: Login realizado com sucesso!\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page(GmailLoginSteps.java:71)\r\n\tat ✽.user is navigated to the home page(file:///C:/Users/igorc/eclipse-workspace/CucumberJava/src/test/resources/Features/GmailLogin.feature:9)\r\n",
-              "duration": 8039268700,
+              "error_message": "java.lang.AssertionError: expected:\u003c200\u003e but was:\u003c302\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page(GmailLoginSteps.java:85)\r\n\tat ✽.user is navigated to the home page(file:///C:/Users/igorc/eclipse-workspace/CucumberJava/src/test/resources/Features/GmailLogin.feature:9)\r\n",
+              "duration": 747005200,
               "status": "failed"
             },
             "line": 9,
@@ -85,7 +85,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-20T19:59:21.508Z",
+        "start_timestamp": "2021-05-28T03:05:04.368Z",
         "line": 14,
         "name": "Check login is successful with valid username and password",
         "description": "",
@@ -95,7 +95,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1520008200,
+              "duration": 1677528100,
               "status": "passed"
             },
             "line": 5,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 2646147200,
+              "duration": 2790002400,
               "status": "passed"
             },
             "line": 6,
@@ -119,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 2409319000,
+              "duration": 2437532300,
               "status": "passed"
             },
             "line": 7,
@@ -141,7 +141,7 @@
           },
           {
             "result": {
-              "duration": 2090657600,
+              "duration": 2094312800,
               "status": "passed"
             },
             "line": 8,
@@ -153,8 +153,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.cssSelector: input[placeholder\u003d\u0027Pesquisar e-mail\u0027]\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-beta-3\u0027, revision: \u00275d108f9a67\u0027\nSystem info: host: \u0027IGORDESKTOP\u0027, ip: \u0027192.168.192.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1261)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)\r\n\tat StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page(GmailLoginSteps.java:67)\r\n\tat ✽.user is navigated to the home page(file:///C:/Users/igorc/eclipse-workspace/CucumberJava/src/test/resources/Features/GmailLogin.feature:9)\r\n",
-              "duration": 2115733800,
+              "error_message": "java.lang.AssertionError: expected:\u003c200\u003e but was:\u003c302\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat StepDefinitions.GmailLoginSteps.user_is_navigated_to_the_home_page(GmailLoginSteps.java:85)\r\n\tat ✽.user is navigated to the home page(file:///C:/Users/igorc/eclipse-workspace/CucumberJava/src/test/resources/Features/GmailLogin.feature:9)\r\n",
+              "duration": 337979700,
               "status": "failed"
             },
             "line": 9,

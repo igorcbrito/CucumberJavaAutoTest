@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: StepDefinitions.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 24.458 sec <<< FAILURE! - in StepDefinitions.TestRunner
+Check login is successful with valid username and password #1(Test login functionality (Gmail))  Time elapsed: 11.285 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<302>
+
+Check login is successful with valid username and password #2(Test login functionality (Gmail))  Time elapsed: 9.504 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<302>
+
