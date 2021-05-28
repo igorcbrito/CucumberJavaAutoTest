@@ -62,6 +62,12 @@ As versões das dependências e plugins utilizados seguem o código a seguir:
 			<version>4.0.0-beta-3</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.10</version>
+		</dependency>
+
 	</dependencies>
 </project>
 
